@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap");
+:root {
+  --clr-blue-600: #003049;
+  --clr-red-400: #d62828;
+  --clr-orange-400: #f77f00;
+  --clr-yellow-300: #fcbf49;
+  --clr-cream-300: #eae2b7;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.flex-container {
+  display: flex;
+}
+
+nav,
+#dropdownMenu {
+  background-color: var(--clr-blue-600);
+}
+
+.nav-link,
+.dropdown-item {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.dropdown-item {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#brand-img {
+  height: 50px;
+}
+
+#brand-heading {
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/* End of Navbar */
+
+#heading {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin-bottom: -0.25rem;
+}
+
+#subheading {
+  font-weight: 500;
+  margin: 0 0 1.5rem 0;
+  padding: 0;
+}
+
+#subheadingLink {
+  color: black;
+  text-decoration: underline;
+}
+
+#subheadingLink:hover {
+  color: black;
+}
+
+#articles {
+  padding: 3rem 10rem;
+}
+
+#front-article {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+}
+
+#front-article p,
+#front-article h2,
+#front-article h4 {
+  padding: 0;
+  margin: 0;
+}
+
+#articleOneText {
+  padding: 2rem;
+}
+
+#articleOneImage {
+  width: 50%;
+  height: 300px;
+  border-radius: 20px 0 0 20px;
+  object-fit: cover;
+}
+
+#articleCardContainer {
+  padding-top: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.article-card {
+  background-color: rgba(0, 0, 0, 0.08);
+  width: 49%;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.article-img {
+  width: 100%;
+  height: 50%;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+
+.article-text {
+  padding: 1.5rem;
+}
+
+.article-text p,
+.article-text h2,
+.article-text h4 {
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--clr-blue-600);
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--clr-red-400);
+  letter-spacing: -1px;
+}
+
+.source-link {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.source-link:hover,
+.source-link:active {
+  color: black;
+  text-decoration: underline;
+}
+
+.author {
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.25rem 0;
+}
+
+.summary {
+  font-size: 1rem;
+  letter-spacing: -1px;
+}
+
+.read-more-btn {
+  font-weight: 600;
+  background-color: var(--clr-orange-400);
+  color: white;
+}
+
+/* Start of Footer */
+footer {
+  background-color: #003049;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer p,
+footer li {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+footer li {
+  list-style-type: none;
+  margin-left: -2rem;
+}
+
+#contactInfo h3,
+#sitemap h3 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+}
+
+#footerSosmed {
+  margin-top: 0.5rem;
+  justify-content: flex-start;
+}
+
+#footerSosmed a,
+#sitemap a {
+  margin-right: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#sitemap a:hover {
+  text-decoration: underline;
+}
+
+#infoPersembahan .info-subheading {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+#infoPersembahan p {
+  line-height: 1.2;
+}
+/* End of Footer */
+
+@media (min-width: 768px) {
+  #brand-heading {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    overflow-x: hidden;
+  }
+  #brand-img {
+    display: none;
+  }
+
+  #brand-heading {
+    padding-top: 10px;
+    font-size: 1rem;
+    letter-spacing: -1px;
+    font-weight: 600;
+  }
+
+  #articles {
+    padding: 3rem 0.5rem;
+  }
+
+  #front-article {
+    flex-direction: column;
+    border-radius: 10px;
+  }
+
+  #articleOneImage {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+
+  #articleOneText {
+    padding: 2rem 1rem;
+  }
+
+  #articleCardContainer {
+    flex-direction: column;
+  }
+
+  .article-card {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+  }
+
+  .article-img {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .article-text {
+    padding: 1.5rem 0.9rem;
+  }
+
+  .title {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .subtitle {
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+
+  .source-link {
+    font-size: 0.8rem;
+  }
+
+  .author {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .summary {
+    font-size: 0.8rem;
+    letter-spacing: 0;
+  }
+
+  footer {
+    margin: 0;
+    flex-direction: column;
+    padding: 2rem 1rem 0.5rem 1rem;
+    justify-content: center;
+  }
+
+  footer > * {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #sitemap {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 820px) {
+  footer {
+    margin: 0;
+    flex-direction: column;
+    padding: 2rem 5rem;
+    justify-content: center;
+  }
+
+  footer > * {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}

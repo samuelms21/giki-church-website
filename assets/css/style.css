@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap");
+:root {
+  --clr-blue-600: #003049;
+  --clr-red-400: #d62828;
+  --clr-orange-400: #f77f00;
+  --clr-yellow-300: #fcbf49;
+  --clr-cream-300: #eae2b7;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.flex-container {
+  display: flex;
+}
+
+nav,
+#dropdownMenu {
+  background-color: var(--clr-blue-600);
+}
+
+.nav-link,
+.dropdown-item {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.dropdown-item {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#brand-img {
+  height: 50px;
+}
+
+#brand-heading {
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/* End of Navbar */
+
+#banner {
+  background-image: url("../images/banner-background.jpg");
+  background-position: bottom;
+  background-size: cover;
+  padding: 5rem 0;
+}
+
+#bannerText {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+#bannerText p {
+  color: white;
+}
+
+#bannerHeading {
+  color: var(--clr-orange-400);
+  font-weight: 700;
+}
+
+#bannerSubheading {
+  font-weight: 600;
+}
+
+#bannerImage {
+  width: 100%;
+  border-radius: 10px;
+}
+
+#pin-icon {
+  color: var(--clr-red-400);
+}
+
+#tentangKami {
+  padding: 5rem 7rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+#aboutUsHeading {
+  font-size: 2.5rem;
+}
+
+#aboutUsSubheading {
+  color: var(--clr-red-400);
+  font-weight: 700;
+}
+
+#tentangKamiText {
+  width: 45%;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+#tentangKamiImage {
+  width: 45%;
+  border-radius: 10px;
+}
+
+#informasiUmum p {
+  line-height: 1.5;
+}
+
+#informasiGereja {
+  padding: 2rem;
+  justify-content: space-between;
+}
+
+.flex-card ul {
+  list-style-position: outside;
+  list-style-type: none;
+  margin-left: -2rem;
+  font-weight: 500;
+}
+
+.flex-card {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: black;
+  padding: 2.5rem 3rem;
+  width: 33%;
+  border-radius: 10px;
+}
+
+.flex-card-heading {
+  color: var(--clr-blue-600);
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.flex-card-subheading {
+  font-weight: 600;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.flex-card-text,
+.flex-card li {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+#newsletterForm input {
+  width: 15rem;
+  padding: 0.3rem 1rem;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  max-width: 100%;
+}
+
+#newsletterForm input:focus {
+  outline: none;
+}
+
+#signUpBtnNewsletter {
+  padding: 0.5rem 1rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: white;
+  background-color: var(--clr-orange-400);
+  border-radius: 10px;
+}
+
+#sosmedHomepage {
+  flex-direction: column;
+}
+
+#sosmedHomepage a {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+#sosmedHomepage a:hover {
+  color: var(--clr-blue-600);
+}
+
+/* Start of Footer */
+footer {
+  background-color: #003049;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer p,
+footer li {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+footer li {
+  list-style-type: none;
+  margin-left: -2rem;
+}
+
+#contactInfo h3,
+#sitemap h3 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+}
+
+#footerSosmed {
+  margin-top: 0.5rem;
+  justify-content: flex-start;
+}
+
+#footerSosmed a,
+#sitemap a {
+  margin-right: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#sitemap a:hover {
+  text-decoration: underline;
+}
+
+#infoPersembahan .info-subheading {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+#infoPersembahan p {
+  line-height: 1.2;
+}
+/* End of Footer */
+
+@media (min-width: 768px) {
+  #brand-heading {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #banner {
+    padding: 8rem 0;
+    height: auto;
+  }
+
+  #bannerText {
+    border-radius: 0;
+  }
+
+  #bannerSub {
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  #brand-img {
+    display: none;
+  }
+
+  #brand-heading {
+    padding-top: 10px;
+    font-size: 1rem;
+    letter-spacing: -1px;
+    font-weight: 600;
+  }
+
+  #tentangKami {
+    padding: 2rem;
+    flex-direction: column;
+  }
+
+  #tentangKamiText {
+    width: 100%;
+  }
+
+  #tentangKamiImage {
+    display: none;
+  }
+
+  #informasiGereja {
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+  }
+
+  #informasiUmum {
+    padding: 1rem 0;
+  }
+
+  .flex-card {
+    margin: 10px 0;
+    padding: 2rem;
+    width: 100%;
+  }
+
+  .flex-card-heading {
+    color: var(--clr-blue-600);
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+  .flex-card-subheading {
+    font-size: 0.9rem;
+  }
+
+  .flex-card-text,
+  .flex-card li {
+    font-size: 0.8rem;
+  }
+
+  #signUpBtnNewsletter {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  #sosmedHomepage a {
+    font-weight: 400;
+    font-size: 0.8rem;
+  }
+
+  footer {
+    margin: 0;
+    flex-direction: column;
+    padding: 2rem 1rem 0.5rem 1rem;
+    justify-content: center;
+  }
+
+  footer > * {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #sitemap {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 820px) {
+  #informasiGereja {
+    flex-direction: column;
+    padding: 2rem 2.5rem;
+  }
+  .flex-card {
+    width: 100%;
+    margin: 10px;
+  }
+
+  #tentangKami {
+    padding: 4rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  #tentangKamiText,
+  #tentangKamiImage {
+    width: 48%;
+  }
+
+  footer {
+    margin: 0;
+    flex-direction: column;
+    padding: 2rem 5rem;
+    justify-content: center;
+  }
+
+  footer > * {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap");
+:root {
+  --clr-blue-600: #003049;
+  --clr-red-400: #d62828;
+  --clr-orange-400: #f77f00;
+  --clr-yellow-300: #fcbf49;
+  --clr-cream-300: #eae2b7;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.flex-container {
+  display: flex;
+}
+
+nav,
+#dropdownMenu {
+  background-color: var(--clr-blue-600);
+}
+
+.nav-link,
+.dropdown-item {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.dropdown-item {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#brand-img {
+  height: 50px;
+}
+
+#brand-heading {
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/* End of Navbar */
+
+#gerejaCabang {
+  padding: 3rem 2rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.gereja-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  padding: 1rem;
+  width: 49.5%;
+  margin: 1rem 0;
+  height: auto;
+}
+
+.church-img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px;
+}
+
+#headingContainer {
+  padding: 2rem 8rem;
+}
+
+#heading {
+  font-weight: 700;
+  font-size: 3rem;
+  color: var(--clr-blue-600);
+}
+
+#subheading {
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+  letter-spacing: -0.5px;
+  color: var(--clr-red-400);
+}
+
+a:hover,
+a:active {
+  color: black;
+  text-decoration: none;
+}
+
+.gereja-card:hover,
+.gereja-card:active {
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 5;
+  transform: scale(1.01, 1.01);
+}
+
+.gereja-card-heading {
+  font-weight: 700;
+  color: var(--clr-blue-600);
+}
+
+.gereja-card-text {
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.gereja-card-text p {
+  padding: 0;
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Start of Footer */
+footer {
+  background-color: #003049;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer p,
+footer li {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+footer li {
+  list-style-type: none;
+  margin-left: -2rem;
+}
+
+#contactInfo h3,
+#sitemap h3 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+}
+
+#footerSosmed {
+  margin-top: 0.5rem;
+  justify-content: flex-start;
+}
+
+#footerSosmed a,
+#sitemap a {
+  margin-right: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#sitemap a:hover {
+  text-decoration: underline;
+}
+
+#infoPersembahan .info-subheading {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+#infoPersembahan p {
+  line-height: 1.2;
+}
+/* End of Footer */
+
+@media (min-width: 768px) {
+  #brand-heading {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #brand-img {
+    display: none;
+  }
+
+  #brand-heading {
+    padding-top: 10px;
+    font-size: 1rem;
+    letter-spacing: -1px;
+    font-weight: 600;
+  }
+
+  #gerejaCabang {
+    padding: 2rem 0.5rem;
+  }
+
+  #headingContainer {
+    padding: 1rem 0;
+  }
+
+  #heading {
+    font-size: 2rem;
+  }
+
+  #subheading {
+    font-size: 0.75rem;
+  }
+
+  .gereja-card {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .church-img {
+    display: none;
+  }
+
+  .gereja-card-text p {
+    font-size: 0.7rem;
+  }
+
+  footer {
+    margin: 0;
+    flex-direction: column;
+    padding: 2rem 1rem 0.5rem 1rem;
+    justify-content: center;
+  }
+
+  footer > * {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #sitemap {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 820px) {
+  #gerejaCabang {
+    padding: 2rem 3rem;
+  }
+
+  #headingContainer {
+    padding: 2rem 0;
+  }
+
+  .gereja-card {
+    padding: 1rem 2rem;
+    width: 95%;
+  }
+
+  .church-img {
+    display: block;
+    height: 200px;
+    width: 200px;
+  }
+
+  footer {
+    margin: 0;
+    flex-direction: column;
+    padding: 2rem 5rem;
+    justify-content: center;
+  }
+
+  footer > * {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 1280px) and (min-width: 820px) {
+  #headingContainer {
+    padding: 2rem 0;
+  }
+
+  #heading {
+    font-size: 2.75rem;
+  }
+
+  #subheading {
+    font-size: 0.9rem;
+  }
+
+  .gereja-card-text p {
+    font-size: 0.9rem;
+  }
+
+  .gereja-card {
+    width: 90%;
+  }
+
+  .church-img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (min-width: 684px) and (max-width: 750px) {
+  .church-img {
+    display: block;
+    width: 200px;
+    height: 200px;
+  }
+
+  #heading {
+    font-size: 2.75rem;
+  }
+
+  #subheading {
+    font-size: 0.9rem;
+  }
+
+  .gereja-card-text p {
+    font-size: 0.9rem;
+  }
+}
